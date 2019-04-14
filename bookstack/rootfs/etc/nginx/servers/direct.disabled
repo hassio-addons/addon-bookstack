@@ -1,0 +1,12 @@
+server {
+    listen %%port%% default_server;
+
+    include /etc/nginx/includes/server_params_local.conf;
+    include /etc/nginx/includes/proxy_params.conf;
+    include /etc/nginx/includes/php.conf;
+
+    location / {
+        #access_by_lua_file /etc/nginx/lua/ha-auth.lua;
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+}

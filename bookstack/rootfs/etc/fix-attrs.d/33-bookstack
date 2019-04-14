@@ -1,0 +1,3 @@
+/var/www/bookstack/storage/framework/views false nginx 0644 0755
+/var/www/bookstack/storage/framework/cache false nginx 0644 0755
+/var/www/bookstack/storage/framework/sessions false nginx 0644 0755

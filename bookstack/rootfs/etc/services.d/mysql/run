@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: Bookstack
+# Runs the MySQL database server
+# ==============================================================================
+
+declare -a options
+
+options+=(--"datadir=/data/mysql")
+options+=(--"tmpdir=/tmp/")
+options+=(--"user=mysql")
+bashio::log.info "Starting MySQL..."
+exec /usr/bin/mysqld_safe "${options[@]}"
