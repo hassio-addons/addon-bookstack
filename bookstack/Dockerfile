@@ -14,22 +14,22 @@ RUN \
         mariadb-client=10.3.13-r0 \
         nginx=1.14.2-r0 \
         nginx-mod-http-lua=1.14.2-r0 \
-        php7-curl=7.2.14-r0 \
-        php7-dom=7.2.14-r0 \
-        php7-fileinfo=7.2.14-r0 \
-        php7-fpm=7.2.14-r0 \
-        php7-gd=7.2.14-r0 \
-        php7-json=7.2.14-r0 \
-        php7-mbstring=7.2.14-r0 \
-        php7-mysqlnd=7.2.14-r0 \
-        php7-openssl=7.2.14-r0 \
-        php7-pdo_mysql=7.2.14-r0 \
-        php7-session=7.2.14-r0 \
-        php7-simplexml=7.2.14-r0 \
-        php7-tidy=7.2.14-r0 \
-        php7-tokenizer=7.2.14-r0 \
-        php7-xml=7.2.14-r0 \
-        php7=7.2.14-r0 \
+        php7-curl=7.2.17-r0 \
+        php7-dom=7.2.17-r0 \
+        php7-fileinfo=7.2.17-r0 \
+        php7-fpm=7.2.17-r0 \
+        php7-gd=7.2.17-r0 \
+        php7-json=7.2.17-r0 \
+        php7-mbstring=7.2.17-r0 \
+        php7-mysqlnd=7.2.17-r0 \
+        php7-openssl=7.2.17-r0 \
+        php7-pdo_mysql=7.2.17-r0 \
+        php7-session=7.2.17-r0 \
+        php7-simplexml=7.2.17-r0 \
+        php7-tidy=7.2.17-r0 \
+        php7-tokenizer=7.2.17-r0 \
+        php7-xml=7.2.17-r0 \
+        php7=7.2.17-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         composer=1.8.0-r1 \
@@ -60,12 +60,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="Bookstack" \
-    io.hass.description="xxxx" \
+    io.hass.description="Bookstack, Simple Wiki Software." \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Paul Sinclair <hello@addons.community>" \
-    org.label-schema.description="xxx" \
+    org.label-schema.description="Bookstack, Simple Wiki Software." \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Bookstack" \
     org.label-schema.schema-version="1.0" \
