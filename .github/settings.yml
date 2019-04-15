@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "chrony - Community Hass.io Add-on for Home Assistant"
+  description: "Bookstack - Community Hass.io Add-on for Home Assistant"
   homepage: https://addons.community
-  topics: ntp, chrony, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: bookstack, hassio-addons, hassio, hass, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false
