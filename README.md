@@ -25,7 +25,7 @@ Bookstack.
 
 BookStack is a simple, self-hosted, easy-to-use platform for organising and
 storing information.  Please support the developers of this software at
- [[Bookstack](https://www.bookstackapp.com/)].
+[Bookstack].
 
 ## Installation
 
@@ -158,6 +158,7 @@ SOFTWARE.
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[bookstack]: https://www.bookstackapp.com/
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/sinclairpaul
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-bookstack.svg
