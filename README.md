@@ -15,7 +15,6 @@
 [![GitHub Activity][commits-shield]][commits]
 
 [![Discord][discord-shield]][discord]
-[![Community Forum][forum-shield]][forum]
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
@@ -49,6 +48,10 @@ Example add-on configuration:
 
 ```json
 {
+  "log_level": "info",
+  "ssl": false,
+  "certfile": "fullchain.pem",
+  "keyfile": "privkey.pem"
 }
 ```
 
@@ -71,6 +74,23 @@ Please note that each level automatically includes log messages from a
 more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
+
+### Option: `ssl`
+
+Enables/Disables SSL (HTTPS) on the web interface of Grocy
+Panel. Set it `true` to enable it, `false` otherwise.
+
+### Option: `certfile`
+
+The certificate file to use for SSL.
+
+**Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+
+### Option: `keyfile`
+
+The private key file to use for SSL.
+
+**Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
 
 ## Known issues and limitations
 
