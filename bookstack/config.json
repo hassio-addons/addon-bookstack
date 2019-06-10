@@ -4,7 +4,7 @@
   "slug": "bookstack",
   "description": "A platform for organising and storing information",
   "url": "https://github.com/hassio-addons/addon-bookstack",
-  "webui": "[PROTO:ssl]://[HOST]:[PORT:8181]",
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "startup": "application",
   "arch": [
     "aarch64",
@@ -20,7 +20,7 @@
     "ssl"
   ],
   "ports": {
-    "80/tcp": 8181
+    "80/tcp": 2665
    },
   "options": {
     "ssl": true,
