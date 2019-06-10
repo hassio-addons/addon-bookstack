@@ -16,8 +16,6 @@
   "boot": "auto",
   "hassio_api": true,
   "hassio_role": "default",
-  "ingress": false,
-  "ingress_port": 0,
   "map": [
     "ssl"
   ],
