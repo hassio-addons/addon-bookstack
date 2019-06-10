@@ -49,3 +49,7 @@ if ! bashio::fs.directory_exists "/data/mysql/mysql"; then
         bashio::exit.nok "Initialization of database failed."
     fi
 fi
+
+#Setup error logging
+ln -sf /dev/stderr /data/mysql/log.err 
+chown mysql:mysql /data/mysql/log.err

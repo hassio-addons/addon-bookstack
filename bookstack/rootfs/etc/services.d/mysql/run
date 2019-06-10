@@ -9,5 +9,6 @@ declare -a options
 options+=(--"datadir=/data/mysql")
 options+=(--"tmpdir=/tmp/")
 options+=(--"user=mysql")
+options+=(--"log-error=/data/mysql/log.err")
 bashio::log.info "Starting MySQL..."
 exec /usr/bin/mysqld_safe "${options[@]}"
