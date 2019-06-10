@@ -22,6 +22,9 @@
   "ports": {
     "80/tcp": 2665
    },
+  "ports_description": {
+    "80/tcp": "Web interface"
+  },
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
