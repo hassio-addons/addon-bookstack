@@ -4,6 +4,11 @@
 # This file initialises the MySQL database
 # ==============================================================================
 
+if ! bashio::fs.directory_exists "/data/mysql"; then
+    bashio::log "Creating MySql directory"
+    mkdir /data/mysql
+    chown mysql:mysql /data/mysql
+fi
 # Initialize the database data directory.
 if ! bashio::fs.directory_exists "/data/mysql/mysql"; then
 
