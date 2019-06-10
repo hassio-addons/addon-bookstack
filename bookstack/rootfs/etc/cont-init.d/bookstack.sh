@@ -6,14 +6,17 @@
 if ! bashio::fs.directory_exists "/data/bookstack/uploads"; then
     bashio::log "Creating uploads directory"
     mkdir -p /data/bookstack/uploads
+    chown nginx:nginx /data/bookstack/uploads
 fi
 if ! bashio::fs.directory_exists "/data/bookstack/files"; then
     bashio::log "Creating files directory"
     mkdir -p /data/bookstack/files
+    chown nginx:nginx /data/bookstack/files
 fi
 if ! bashio::fs.directory_exists "/data/bookstack/images"; then
     bashio::log "Creating images directory"
     mkdir -p /data/bookstack/images
+    chown nginx:nginx /data/bookstack/images
 fi
 rm -r /var/www/bookstack/storage/uploads/files
 rm -r /var/www/bookstack/storage/uploads/images
