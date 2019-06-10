@@ -29,9 +29,6 @@ if ! bashio::fs.file_exists "/data/bookstack/appkey.txt"; then
 	key=$(php /var/www/bookstack/artisan key:generate --show)
 	echo "${key}" > /data/bookstack/appkey.txt
 	bashio::log.info "App Key generated: ${key}"
-#else
-#	key=$(cat /data/bookstack/appkey.txt)
 fi
-#sed -i "s,APP_KEY=SomeRandomString,APP_KEY=${key},g" \
-#     /var/www/bookstack/.env
+ln -sf /dev/stderr /var/www/bookstack/storage/logs/laravel.log
 
