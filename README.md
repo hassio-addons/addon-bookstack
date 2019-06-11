@@ -77,7 +77,7 @@ you are troubleshooting.
 
 ### Option: `ssl`
 
-Enables/Disables SSL (HTTPS) on the web interface of Grocy
+Enables/Disables SSL (HTTPS) on the web interface of Bookstack
 Panel. Set it `true` to enable it, `false` otherwise.
 
 ### Option: `certfile`
