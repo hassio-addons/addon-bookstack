@@ -11,6 +11,22 @@ RUN \
     apk add --no-cache \
         mariadb=10.3.16-r0 \
         mariadb-client=10.3.16-r0 \
+        php7-curl=7.3.6-r0 \
+        php7-dom=7.3.6-r0 \
+        php7-fileinfo=7.3.6-r0 \
+        php7-fpm=7.3.6-r0 \
+        php7-gd=7.3.6-r0 \
+        php7-json=7.3.6-r0 \
+        php7-mbstring=7.3.6-r0 \
+        php7-mysqlnd=7.3.6-r0 \
+        php7-openssl=7.3.6-r0 \
+        php7-pdo_mysql=7.3.6-r0 \
+        php7-session=7.3.6-r0 \
+        php7-simplexml=7.3.6-r0 \
+        php7-tidy=7.3.6-r0 \
+        php7-tokenizer=7.3.6-r0 \
+        php7-xml=7.3.6-r0 \
+        php7=7.3.6-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         composer=1.8.0-r1 \
