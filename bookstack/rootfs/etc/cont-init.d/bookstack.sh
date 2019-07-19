@@ -3,6 +3,28 @@
 # Community Hass.io Add-ons: Bookstack
 # This file creates/upgrades the MYSQL db and configures the app key
 # ==============================================================================
+if bashio::config.equals 'database_location' 'remote';then
+	if ! bashio::config.exists 'mysql_host';then
+		bashio::log.fatal \
+		"MYSQL database has been specified but no host is configured"
+		bashio::exit.nok
+	fi
+	if ! bashio::config.has_value 'mysql_database';then
+		bashio::log.fatal \
+		"MYSQL database has been specified but no database is configured"
+		bashio::exit.nok
+	fi
+	if ! bashio::config.has_value 'mysql_user';then
+		bashio::log.fatal \
+		"MYSQL database has been specified but no user is configured"
+		bashio::exit.nok
+	fi
+	if ! bashio::config.has_value 'mysql_password';then
+		bashio::log.fatal \
+		"MYSQL database has been specified but no password is configured"
+		bashio::exit.nok
+	fi
+fi
 if ! bashio::fs.directory_exists "/data/bookstack/uploads"; then
     bashio::log "Creating uploads directory"
     mkdir -p /data/bookstack/uploads
