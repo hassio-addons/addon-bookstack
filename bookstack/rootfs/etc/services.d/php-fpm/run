@@ -5,19 +5,32 @@
 # ==============================================================================
 declare key
 # Wait for MySQL to become available
-for _ in $(seq 1 30); do
-    if echo 'SELECT 1' | mysql &> /dev/null; then
-        break
-    fi
-    sleep 1
-done
-
+# TODO Change this as not sure it is functional 
+if bashio::config.equals 'database_location' 'local';then
+    for _ in $(seq 1 30); do
+        if echo 'SELECT 1' | mysql &> /dev/null; then
+            break
+        fi
+        sleep 1
+    done
+fi
 key=$(cat /data/bookstack/appkey.txt)
 export APP_KEY=${key}
+if bashio::config.equals 'database_location' 'remote';then
+    DB_HOST=$(bashio::config "mysql_host")
+    DB_DATABASE=$(bashio::config "mysql_database")
+    DB_USERNAME=$(bashio::config "mysql_user")
+    DB_PASSWORD=$(bashio::config "mysql_password")
+    export DB_HOST
+    export DB_DATABASE
+    export DB_USERNAME
+    export DB_PASSWORD
+else
 export DB_HOST=localhost
 export DB_DATABASE=bookstack
 export DB_USERNAME=bookstack
 export DB_PASSWORD=bookstack
+fi
 
 bashio::log.info "Installing/updating Database"
 php /var/www/bookstack/artisan migrate --force

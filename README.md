@@ -92,6 +92,34 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
 
+### Option: `database_location`
+
+Either `local` or `remote`, specifies if the addon will use a local or remote
+MYSql database.
+
+### Option: `mysql_host`
+
+If using an external database, the hostname for the MySQL/MariaDB database, set 
+to `core-mariadb` if using the Homeassistant Core MariaDB addon.
+
+### Option: `mysql_database`
+
+Only applies if external MYSQL database is used, the name of the database.
+
+### Option: `mysql_user`
+
+Only applies if external MYSQL database is used, the username with permissions.
+
+### Option: `mysql_password`
+
+Only applies if external MYSQL database is used, the password of the above user.
+
+## Database usage
+
+By default, Bookstack will use a locally installed database, this can be changed
+with the configuration to use an external MySql/MariaDB Database. Please note
+that there is no easy upgrade path between them.
+
 ## Known issues and limitations
 
 SMTP support is disabled.
