@@ -99,7 +99,7 @@ MYSql database.
 
 ### Option: `mysql_host`
 
-If using an external database, the hostname for the MySQL/MariaDB database, set 
+If using an external database, the hostname for the MySQL/MariaDB database, set
 to `core-mariadb` if using the Homeassistant Core MariaDB addon.
 
 ### Option: `mysql_database`
