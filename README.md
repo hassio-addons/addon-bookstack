@@ -95,6 +95,7 @@ The private key file to use for SSL.
 ### Option: `database_location`
 
 Either `local` or `remote`, specifies if the addon will use a local or remote
+
 MYSQL database.
 
 ### Option: `mysql_host`
