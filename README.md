@@ -26,6 +26,8 @@ BookStack is a simple, self-hosted, easy-to-use platform for organising and
 storing information.  Please support the developers of this software at
 [Bookstack].
 
+![Bookstack screenshot](images/screenshot.gif)
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
