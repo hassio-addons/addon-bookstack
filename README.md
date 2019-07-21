@@ -97,13 +97,13 @@ The private key file to use for SSL.
 ### Option: `database_location`
 
 Either `local` or `remote`, specifies if the addon will use a local or remote
-
-MYSQL database.
+MYSQL database.  If the location is remote please ensure it is created with a
+user that has full permissions.
 
 ### Option: `mysql_host`
 
-If using an external database, the hostname for the MYSQL/MariaDB database, set
-to `core-mariadb` if using the Homeassistant Core MariaDB addon.
+If using an external database, the hostname/address for the MYSQL/MariaDB
+database, set to `core-mariadb` if using the Homeassistant Core MariaDB addon.
 
 ### Option: `mysql_database`
 
@@ -121,11 +121,12 @@ Only applies if external MYSQL database is used, the password of the above user.
 
 By default, Bookstack will use a locally installed database, this can be changed
 with the configuration to use an external MySql/MariaDB Database. Please note
-that there is no easy upgrade path between them.
+that there is no easy upgrade path between the two options.
 
 ## Known issues and limitations
 
 SMTP support is disabled.
+Ingress will not function due to the way the application stores image files.
 
 ## Changelog & Releases
 
