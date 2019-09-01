@@ -44,7 +44,9 @@ RUN \
     \
     && find /var/www/bookstack -type f -name "*.md" -depth -exec rm -f {} \; \
     && rm -f -r \
-         /tmp/*
+         /tmp/* \
+         /var/www/bookstack/tests \
+         /var/www/bookstack/dev
 
 # Copy root filesystem
 COPY rootfs /
