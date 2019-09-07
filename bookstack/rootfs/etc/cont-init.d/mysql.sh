@@ -9,11 +9,12 @@ if bashio::config.equals 'database_location' 'local';then
         mkdir /data/mysql
         chown mysql:mysql /data/mysql
     fi
-    # Initialize the database data directory.
+    # Initialise the database data directory.
     if ! bashio::fs.directory_exists "/data/mysql/mysql"; then
 
-        bashio::log.info "Initializing database..."
-        s6-setuidgid mysql mysql_install_db --datadir=/data/mysql \
+        bashio::log.info "Initialising database..."
+        # Initialise MYSQL
+        mysql_install_db --datadir=/data/mysql --user=mysql
         # Start MySQL.
         /usr/bin/mysqld_safe --datadir=/data/mysql \
             --tmpdir=/tmp/ --user=mysql &
