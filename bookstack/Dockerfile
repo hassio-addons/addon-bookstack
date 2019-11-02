@@ -11,6 +11,7 @@ RUN \
     apk add --no-cache \
         mariadb=10.3.18-r0 \
         mariadb-client=10.3.18-r0 \
+        nginx=1.16.1-r1 \
         php7-curl=7.3.11-r0 \
         php7-dom=7.3.11-r0 \
         php7-fileinfo=7.3.11-r0 \
