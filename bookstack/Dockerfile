@@ -27,7 +27,7 @@ RUN \
         php7=7.3.13-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        composer=1.8.6-r0 \
+        composer=1.9.1-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         https://github.com/BookStackApp/BookStack/archive/v0.27.5.tar.gz \
