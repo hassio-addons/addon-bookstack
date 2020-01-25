@@ -31,9 +31,8 @@ if bashio::config.equals 'database_location' 'local';then
             fi
             sleep 1
         done
-
         # Secure the installation.
-        printf '\nn\n\n\n\n\n' | /usr/bin/mysql_secure_installation
+        printf '\n\nn\n\n\n\n\n' | /usr/bin/mysql_secure_installation
 
         # Create the database.
         bashio::log.info "Creating Database..."
