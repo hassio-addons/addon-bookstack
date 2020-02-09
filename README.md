@@ -172,7 +172,7 @@ check [the contributor's page][contributors].
 
 ## We have got some Home Assistant add-ons for you
 
-Want some more functionality to your Home Assistant Home Assistant instance?
+Want some more functionality to your Home Assistant instance?
 
 We have created multiple add-ons for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
