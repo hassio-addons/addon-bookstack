@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Bookstack
+# Community Home Assistant Add-ons: Bookstack
 # This file configures nginx
 # ==============================================================================
 declare admin_port

@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Bookstack
+# Community Home Assistant Add-ons: Bookstack
 # Runs the MySQL database server
 # ==============================================================================
 if bashio::config.equals 'database_location' 'remote';then
