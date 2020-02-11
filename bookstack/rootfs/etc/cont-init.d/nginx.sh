@@ -5,7 +5,7 @@
 # ==============================================================================
 declare admin_port
 declare certfile
-declare hassio_dns
+declare dns_host
 declare keyfile
 
 admin_port=$(bashio::addon.port 80)
@@ -27,5 +27,5 @@ if bashio::var.has_value "${admin_port}"; then
     sed -i "s/%%port%%/80/g" /etc/nginx/servers/direct.conf
 fi
 
-hassio_dns=$(bashio::dns.host)
-sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/includes/resolver.conf
+dns_host=$(bashio::dns.host)
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/includes/resolver.conf
