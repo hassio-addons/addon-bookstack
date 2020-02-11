@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "Bookstack - Community Home Assistant Add-on"
+  description: "Bookstack - Community Home Assistant Add-ons"
   homepage: https://addons.community
-  topics: bookstack, addons, home-assistant, homeassistant
+  topics: bookstack, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false
@@ -53,7 +53,7 @@ labels:
   # Additional markers
   - name: "Security"
     color: ee0701
-    description: "Marks a security issues that needs to be resolved asap."
+    description: "Marks a security issue that needs to be resolved asap."
   - name: "Idea"
     color: fef2c0
     description: "Marks an idea, which might be excepted and implemented."

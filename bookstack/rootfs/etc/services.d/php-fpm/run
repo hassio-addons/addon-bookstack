@@ -1,11 +1,11 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-ons: Bookstack
+# Community Home Assistant Add-on: Bookstack
 # Runs the PHP-FPM daemon
 # ==============================================================================
 declare key
 # Wait for MySQL to become available
-# TODO Change this as not sure it is functional 
+# TODO Change this as not sure it is functional
 if bashio::config.equals 'database_location' 'local';then
     for _ in $(seq 1 30); do
         if echo 'SELECT 1' | mysql &> /dev/null; then

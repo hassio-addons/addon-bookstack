@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-ons: Bookstack
+# Community Home Assistant Add-on: Bookstack
 # This file initialises the MySQL database
 # ==============================================================================
 if bashio::config.equals 'database_location' 'local';then
@@ -51,6 +51,6 @@ if bashio::config.equals 'database_location' 'local';then
     fi
 
     #Setup error logging
-    ln -sf /dev/stderr /data/mysql/log.err 
+    ln -sf /dev/stderr /data/mysql/log.err
     chown mysql:mysql /data/mysql/log.err
 fi

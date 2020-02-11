@@ -1,4 +1,4 @@
-# Community Home Assistant Add-ons: Bookstack
+# Community Home Assistant Add-on: Bookstack
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -179,7 +179,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2020 Paul Sinclair
+Copyright (c) 2019-2020 Paul Sinclair
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
