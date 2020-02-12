@@ -1,6 +1,6 @@
 ---
 repository:
-  description: "Bookstack - Community Home Assistant Add-ons"
+  description: "Bookstack - Home Assistant Community Add-ons"
   homepage: https://addons.community
   topics: bookstack, addon, addons, home-assistant, homeassistant
   private: false

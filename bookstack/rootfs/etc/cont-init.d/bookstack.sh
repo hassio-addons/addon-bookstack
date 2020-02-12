@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-on: Bookstack
+# Home Assistant Community Add-on: Bookstack
 # This file creates/upgrades the MYSQL db and configures the app key
 # ==============================================================================
 if bashio::config.equals 'database_location' 'remote';then
