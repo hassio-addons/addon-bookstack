@@ -6,25 +6,28 @@
 declare key
 key=$(cat /data/bookstack/appkey.txt)
 export APP_KEY=${key}
-if bashio::config.equals 'database_location' 'remote';then
-    DB_HOST=$(bashio::config "mysql_host")
-    DB_DATABASE=$(bashio::config "mysql_database")
-    DB_USERNAME=$(bashio::config "mysql_user")
-    DB_PASSWORD=$(bashio::config "mysql_password")
-    export DB_HOST
-    export DB_DATABASE
-    export DB_USERNAME
-    export DB_PASSWORD
+if bashio::config.has_value 'remote_mysql_host';then
+    DB_HOST=$(bashio::config "remote_mysql_host")
+    DB_DATABASE=$(bashio::config "remote_mysql_database")
+    DB_USERNAME=$(bashio::config "remote_mysql_username")
+    DB_PASSWORD=$(bashio::config "remote_mysql_password")
+    DB_PORT=$(bashio::config "remote_mysql_port")
 else
-export DB_HOST=localhost
-export DB_DATABASE=bookstack
-export DB_USERNAME=bookstack
-export DB_PASSWORD=bookstack
+    DB_HOST=$(bashio::services "mysql" "host")
+    DB_DATABASE=bookstack
+    DB_USERNAME=$(bashio::services "mysql" "username")
+    DB_PASSWORD=$(bashio::services "mysql" "password")
+    DB_PORT=$(bashio::services "mysql" "port")
 fi
+
+export DB_HOST
+export DB_DATABASE
+export DB_USERNAME
+export DB_PASSWORD
+export DB_PORT
 
 bashio::log.info "Installing/updating Database"
 php /var/www/bookstack/artisan migrate --force
-
 
 bashio::log.info "Starting PHP-FPM..."
 
