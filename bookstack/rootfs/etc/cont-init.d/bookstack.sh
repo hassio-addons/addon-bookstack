@@ -41,6 +41,9 @@ else
 	port=$(bashio::services "mysql" "port")
 	username=$(bashio::services "mysql" "username")
 
+	bashio::log.warning "Bookstack is using the HA Maria DB addon"
+	bashio::log.warning "Please ensure this is included in your backups"
+	bashio::log.warning "Uninstalling the MariaDB addon will remove any data"
 	bashio::log.info "Creating database for Bookstack if required"
 	mysql \
 		-u "${username}" -p"${password}" \
