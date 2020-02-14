@@ -4,16 +4,6 @@
 # Runs the PHP-FPM daemon
 # ==============================================================================
 declare key
-# Wait for MySQL to become available
-# TODO Change this as not sure it is functional
-if bashio::config.equals 'database_location' 'local';then
-    for _ in $(seq 1 30); do
-        if echo 'SELECT 1' | mysql &> /dev/null; then
-            break
-        fi
-        sleep 1
-    done
-fi
 key=$(cat /data/bookstack/appkey.txt)
 export APP_KEY=${key}
 if bashio::config.equals 'database_location' 'remote';then
