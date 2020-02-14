@@ -88,33 +88,33 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
-### Option: `database_location`
-
-Either `local` or `remote`, specifies if the addon will use a local or remote
-MYSQL database.  If the location is remote please ensure it is created with a
-user that has full permissions.
-
-### Option: `mysql_host`
+### Option: `remote_mysql_host`
 
 If using an external database, the hostname/address for the MYSQL/MariaDB
-database, set to `core-mariadb` if using the Homeassistant Core MariaDB addon.
+database.
 
-### Option: `mysql_database`
+### Option: `remote_mysql_database`
 
-Only applies if external MYSQL database is used, the name of the database.
+Only applies if a remote MYSQL database is used, the name of the database.
 
-### Option: `mysql_user`
+### Option: `remote_mysql_username`
 
-Only applies if external MYSQL database is used, the username with permissions.
+Only applies if a remote MYSQL database is used, the username with permissions.
 
-### Option: `mysql_password`
+### Option: `remote_mysql_password`
 
-Only applies if external MYSQL database is used, the password of the above user.
+Only applies if a remote MYSQL database is used, the password of the above user.
+
+### Option: `remote_mysql_port`
+
+Only applies if a remote MYSQL database is used, the port that the database
+server is listening on.
 
 ## Database usage
 
-By default, Bookstack will use a locally installed database, this can be changed
-with the configuration to use an external MySql/MariaDB Database. Please note
+By default, Bookstack will automatically use and configure the Home Assistant
+MariaDB addon which should be installed prior to startup, this can be changed
+within the configuration to use an external MySql/MariaDB Database. Please note
 that there is no easy upgrade path between the two options.
 
 ## Known issues and limitations
