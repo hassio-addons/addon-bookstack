@@ -24,11 +24,11 @@
     "keyfile": "privkey.pem"
   },
   "schema": {
-    "database_location": "list(local|remote)?",
-    "mysql_host": "str?",
-    "mysql_database": "str?",
-    "mysql_user": "str?",
-    "mysql_password": "password?",
+    "remote_mysql_host": "str?",
+    "remote_mysql_database": "str?",
+    "remote_mysql_username": "str?",
+    "remote_mysql_password": "password?",
+    "remote_mysql_port": "int?",
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "certfile": "str",
     "keyfile": "str",
