@@ -230,4 +230,4 @@ SOFTWARE.
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-bookstack.svg
 [releases]: https://github.com/hassio-addons/addon-bookstack/releases
 [repository]: https://github.com/hassio-addons/repository
-[semver]: http://semver.org/spec/v2.0.0.htm
+[semver]: http://semver.org/spec/v2.0.0
