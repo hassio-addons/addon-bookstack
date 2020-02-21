@@ -28,8 +28,7 @@ if bashio::config.has_value 'remote_mysql_host';then
 		bashio::exit.nok
 	fi
 else
-	mysqlstate=$(bashio::services "mysql" "host")
-	if  bashio::var.is_empty "$mysqlstate";then
+	if  ! bashio::services.available 'mysql';then
 	 	bashio::log.fatal \
 	 		"Local database access should be provided by the MariaDB addon"
 	 	bashio::log.fatal \
@@ -41,7 +40,7 @@ else
 	port=$(bashio::services "mysql" "port")
 	username=$(bashio::services "mysql" "username")
 
-	bashio::log.warning "Bookstack is using the HA Maria DB addon"
+	bashio::log.warning "Bookstack is using the Maria DB addon"
 	bashio::log.warning "Please ensure this is included in your backups"
 	bashio::log.warning "Uninstalling the MariaDB addon will remove any data"
 	bashio::log.info "Creating database for Bookstack if required"
