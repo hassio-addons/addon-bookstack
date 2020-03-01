@@ -2,7 +2,7 @@
   "name": "Bookstack",
   "version": "dev",
   "slug": "bookstack",
-  "description": "A platform for organising and storing information",
+  "description": "Simple & Free Wiki Software",
   "url": "https://github.com/hassio-addons/addon-bookstack",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "startup": "application",

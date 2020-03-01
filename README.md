@@ -18,12 +18,12 @@
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
-Bookstack.
+Bookstack: Simple & Free Wiki Software.
 
 ## About
 
 BookStack is a simple, self-hosted, easy-to-use platform for organising and
-storing information.  Please support the developers of this software at
+storing information. Please support the developers of this software at
 [Bookstack].
 
 ![Bookstack screenshot](images/screenshot.png)

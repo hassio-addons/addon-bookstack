@@ -59,12 +59,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="Bookstack" \
-    io.hass.description="Bookstack, Simple Wiki Software." \
+    io.hass.description="Bookstack: Simple & Free Wiki Software" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Paul Sinclair <hello@addons.community>" \
-    org.label-schema.description="Bookstack, Simple Wiki Software." \
+    org.label-schema.description="Bookstack: Simple & Free Wiki Software" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Bookstack" \
     org.label-schema.schema-version="1.0" \
