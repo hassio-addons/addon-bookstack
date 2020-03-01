@@ -19,7 +19,7 @@
     "80/tcp": "Web interface"
   },
   "options": {
-    "ssl": true,
+    "ssl": false,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem"
   },
