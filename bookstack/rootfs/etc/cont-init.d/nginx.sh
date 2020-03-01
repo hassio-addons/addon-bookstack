@@ -19,11 +19,9 @@ if bashio::var.has_value "${admin_port}"; then
         mv /etc/nginx/servers/direct-ssl.disabled /etc/nginx/servers/direct.conf
         sed -i "s#%%certfile%%#${certfile}#g" /etc/nginx/servers/direct.conf
         sed -i "s#%%keyfile%%#${keyfile}#g" /etc/nginx/servers/direct.conf
-
     else
         mv /etc/nginx/servers/direct.disabled /etc/nginx/servers/direct.conf
     fi
-
     sed -i "s/%%port%%/80/g" /etc/nginx/servers/direct.conf
 fi
 
