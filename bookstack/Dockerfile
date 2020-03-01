@@ -39,7 +39,7 @@ RUN \
     && cd /var/www/bookstack \
     \
     && composer install --no-dev \
-    && apk del --purge .build-dependencies \
+    && apk del --no-cache --purge .build-dependencies \
     \
     && find /var/www/bookstack -type f -name "*.md" -depth -exec rm -f {} \; \
     && rm -f -r \
