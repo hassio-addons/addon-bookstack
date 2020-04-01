@@ -4,6 +4,7 @@
 # Runs the PHP-FPM daemon
 # ==============================================================================
 export APP_KEY
+export APP_URL
 export DB_DATABASE
 export DB_HOST
 export DB_PASSWORD
@@ -24,6 +25,10 @@ else
     DB_USERNAME=$(bashio::services "mysql" "username")
     DB_PASSWORD=$(bashio::services "mysql" "password")
     DB_PORT=$(bashio::services "mysql" "port")
+fi
+
+if bashio::config.has_value 'proxy_host';then
+    APP_URL=$(bashio::config "proxy_host")
 fi
 
 bashio::log.info "Installing/updating Database"
