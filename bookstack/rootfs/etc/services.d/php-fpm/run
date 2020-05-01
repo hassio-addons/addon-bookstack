@@ -31,6 +31,11 @@ if bashio::config.has_value 'proxy_host';then
     APP_URL=$(bashio::config "proxy_host")
 fi
 
+if bashio::config.equals 'log_level' 'debug' \
+    || bashio::config.equals 'log_level' 'trace' ;then
+    export APP_DEBUG=true
+fi
+
 bashio::log.info "Installing/updating Database"
 php /var/www/bookstack/artisan migrate --force
 
