@@ -27,6 +27,7 @@ RUN \
         php7-tokenizer=7.3.17-r0 \
         php7-xml=7.3.17-r0 \
         php7=7.3.17-r0 \
+        wkhtmltopdf \
     \
     && apk add --no-cache --virtual .build-dependencies \
         composer=1.9.1-r0 \
@@ -46,6 +47,9 @@ RUN \
          /tmp/* \
          /var/www/bookstack/tests \
          /var/www/bookstack/dev
+
+# PDF Rendering
+ENV WKHTMLTOPDF /usr/bin/wkhtmltopdf
 
 # Copy root filesystem
 COPY rootfs /
