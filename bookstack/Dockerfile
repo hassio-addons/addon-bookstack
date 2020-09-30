@@ -32,7 +32,7 @@ RUN \
         composer=1.10.10-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
-        https://github.com/BookStackApp/BookStack/archive/v0.30.1.tar.gz \
+        https://github.com/BookStackApp/BookStack/archive/v0.30.2.tar.gz \
     &&  mkdir -p /var/www/bookstack \
     && tar zxvf /tmp/bookstack.tar.gz -C \
         /var/www/bookstack --strip-components=1 \
