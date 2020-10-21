@@ -10,6 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         mariadb-client=10.4.15-r0 \
+        nginx=1.18.0-r1 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         composer=1.10.10-r0 \
