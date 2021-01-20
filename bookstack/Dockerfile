@@ -9,6 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
+        mariadb-client=10.5.8-r0\
         nginx=1.18.0-r13 \
     \
     && apk add --no-cache --virtual .build-dependencies \
