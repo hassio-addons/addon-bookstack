@@ -10,7 +10,7 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -107,12 +107,12 @@ SOFTWARE.
 [docs]: https://github.com/hassio-addons/addon-bookstack/blob/master/bookstack/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-xxxxx/xxxxx
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-bookstack/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-bookstack/pipelines
+[github-actions-shield]: https://github.com/hassio-addons/addon-bookstack/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-bookstack/actions
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-bookstack/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-bookstack.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-bookstack.svg
