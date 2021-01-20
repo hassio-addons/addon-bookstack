@@ -1,11 +1,7 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "commitMessageAction": "Updates",
   "commitMessageTopic": "{{depName}}",
   "commitMessagePrefix": ":arrow_up:",
-  "labels": [
-    "Type: Maintenance"
-  ]
+  "labels": ["Type: Maintenance"]
 }
