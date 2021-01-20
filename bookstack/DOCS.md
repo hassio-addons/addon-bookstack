@@ -114,6 +114,7 @@ The name of the environment variable to set.
 #### Sub-option: `value`
 
 The value of the environment variable to set.
+
 ## Database usage
 
 By default, Bookstack will automatically use and configure the Home Assistant
