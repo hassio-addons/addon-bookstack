@@ -99,12 +99,12 @@ server is listening on.
 This allows the setting of Environment Variables to control Bookstack
 configuration as documented at:
 
- <https://www.bookstackapp.com/docs/>
+<https://www.bookstackapp.com/docs/>
 
 **Note**: _Changing these options can possibly cause issues with you instance.
 USE AT YOUR OWN RISK!_
 
-These are case sensitive.  Items set by specific configuration will take
+These are case sensitive and any items set by specific configuration will take
 precedence.
 
 #### Sub-option: `name`
