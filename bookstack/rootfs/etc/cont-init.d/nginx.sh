@@ -3,8 +3,6 @@
 # Home Assistant Community Add-on: Bookstack
 # This file configures nginx
 # ==============================================================================
-declare certfile
-declare keyfile
 
 if bashio::var.has_value "$(bashio::addon.port 80)"; then
     bashio::config.require.ssl
