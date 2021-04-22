@@ -5,7 +5,8 @@
 # ==============================================================================
 
 if bashio::var.is_empty "$(bashio::addon.port 80)"; then
-    bashio::log.warning "No host port is configured, please ensure a port is set for external access to function"
+    bashio::log.warning "No host port is configured, please ensure a port is"
+    bashio::log.warning "set for external access to function"
 fi
 
 bashio::config.require.ssl
