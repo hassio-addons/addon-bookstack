@@ -27,7 +27,6 @@
     "remote_mysql_username": "str?",
     "remote_mysql_password": "password?",
     "remote_mysql_port": "int?",
-    "proxy_host": "str?",
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "certfile": "str",
     "keyfile": "str",
