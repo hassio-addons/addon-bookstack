@@ -24,7 +24,6 @@ RUN \
         php7-pdo_mysql=7.4.19-r0 \
         php7-session=7.4.19-r0 \
         php7-simplexml=7.4.19-r0 \
-        php7-tidy=7.4.19-r0 \
         php7-tokenizer=7.4.19-r0 \
         php7-xml=7.4.19-r0 \
         php7=7.4.19-r0 \
