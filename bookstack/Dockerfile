@@ -29,7 +29,7 @@ RUN \
         php7=7.4.23-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        composer=2.1.3-r0 \
+        composer=2.1.6-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         https://github.com/BookStackApp/BookStack/archive/v21.05.3.tar.gz \
