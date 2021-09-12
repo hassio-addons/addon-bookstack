@@ -86,3 +86,10 @@ if ! bashio::fs.file_exists "/data/bookstack/appkey.txt"; then
   echo "${key}" > /data/bookstack/appkey.txt
   bashio::log.info "App Key generated: ${key}"
 fi
+
+if bashio::config.has_value "appkey"; then
+   bashio::log.info "Setting appkey to user defined value"
+   key=$(bashio::config "appkey")
+   echo "${key}" > /data/bookstack/appkey.txt
+   bashio::addon.option 'appkey'
+fi
