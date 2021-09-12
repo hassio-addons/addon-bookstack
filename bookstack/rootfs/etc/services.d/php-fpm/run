@@ -20,6 +20,11 @@ done
 
 APP_KEY=$(cat /data/bookstack/appkey.txt)
 
+if bashio::config.true "show_appkey"; then
+   bashio::log.info "Your app key is currently set to:"
+   bashio::log.info "${APP_KEY}"
+fi
+
 if bashio::config.has_value 'remote_mysql_host';then
     DB_HOST=$(bashio::config "remote_mysql_host")
     DB_DATABASE=$(bashio::config "remote_mysql_database")
