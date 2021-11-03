@@ -77,7 +77,6 @@ rm -r /var/www/bookstack/public/uploads
 ln -s /data/bookstack/files /var/www/bookstack/storage/uploads/files
 ln -s /data/bookstack/images /var/www/bookstack/storage/uploads/images
 ln -s /data/bookstack/uploads /var/www/bookstack/public/uploads
-ln -sf /dev/stderr /var/www/bookstack/storage/logs/laravel.log
 
 # Create API key if needed
 if ! bashio::fs.file_exists "/data/bookstack/appkey.txt"; then

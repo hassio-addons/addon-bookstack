@@ -10,6 +10,7 @@ export DB_HOST
 export DB_PASSWORD
 export DB_PORT
 export DB_USERNAME
+export LOG_CHANNEL=stderr
 
 for envvar in $(bashio::config 'envvars|keys'); do
     name=$(bashio::config "envvars[${envvar}].name")
