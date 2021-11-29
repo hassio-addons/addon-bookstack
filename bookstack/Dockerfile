@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.1.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.2.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,24 +9,24 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.5.12-r0 \
-        nginx=1.20.1-r3 \
-        php7-curl=7.4.25-r0 \
-        php7-dom=7.4.25-r0 \
-        php7-fileinfo=7.4.25-r0 \
-        php7-fpm=7.4.25-r0 \
-        php7-gd=7.4.25-r0 \
-        php7-json=7.4.25-r0 \
-        php7-ldap=7.4.25-r0 \
-        php7-mbstring=7.4.25-r0 \
-        php7-mysqlnd=7.4.25-r0 \
-        php7-openssl=7.4.25-r0 \
-        php7-pdo_mysql=7.4.25-r0 \
-        php7-session=7.4.25-r0 \
-        php7-simplexml=7.4.25-r0 \
-        php7-tokenizer=7.4.25-r0 \
-        php7-xml=7.4.25-r0 \
-        php7=7.4.25-r0 \
+        mariadb-client=10.5.13-r0 \
+        nginx=1.20.2-r0 \
+        php7-curl=7.4.26-r0 \
+        php7-dom=7.4.26-r0 \
+        php7-fileinfo=7.4.26-r0 \
+        php7-fpm=7.4.26-r0 \
+        php7-gd=7.4.26-r0 \
+        php7-json=7.4.26-r0 \
+        php7-ldap=7.4.26-r0 \
+        php7-mbstring=7.4.26-r0 \
+        php7-mysqlnd=7.4.26-r0 \
+        php7-openssl=7.4.26-r0 \
+        php7-pdo_mysql=7.4.26-r0 \
+        php7-session=7.4.26-r0 \
+        php7-simplexml=7.4.26-r0 \
+        php7-tokenizer=7.4.26-r0 \
+        php7-xml=7.4.26-r0 \
+        php7=7.4.26-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         composer=2.1.9-r0 \
@@ -34,7 +34,7 @@ RUN \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         https://github.com/BookStackApp/BookStack/archive/v21.10.3.tar.gz \
     &&  mkdir -p /var/www/bookstack \
-    && tar zxvf /tmp/bookstack.tar.gz -C \
+    && tar zxf /tmp/bookstack.tar.gz -C \
         /var/www/bookstack --strip-components=1 \
     && cd /var/www/bookstack \
     \
