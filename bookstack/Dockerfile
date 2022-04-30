@@ -9,8 +9,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.5.13-r0 \
-        nginx=1.20.2-r0 \
+        mariadb-client=10.5.15-r0 \
+        nginx=1.20.2-r1 \
         php7-curl=7.4.26-r0 \
         php7-dom=7.4.26-r0 \
         php7-fileinfo=7.4.26-r0 \
@@ -32,7 +32,7 @@ RUN \
         composer=2.1.9-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
-        https://github.com/BookStackApp/BookStack/archive/v22.02.3.tar.gz \
+        https://github.com/BookStackApp/BookStack/archive/v22.04.tar.gz \
     &&  mkdir -p /var/www/bookstack \
     && tar zxf /tmp/bookstack.tar.gz -C \
         /var/www/bookstack --strip-components=1 \
