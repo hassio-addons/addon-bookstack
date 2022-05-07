@@ -9,9 +9,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.5.13-r0 \
-        nginx=1.20.2-r0 \
-        php7-curl=7.4.26-r0 \
+        mariadb-client=10.6.7-r0 \
+        nginx=1.20.2-r1 \
         php8-curl=8.0.18-r0 \
         php8-dom=8.0.18-r0 \
         php8-fileinfo=8.0.18-r0 \
