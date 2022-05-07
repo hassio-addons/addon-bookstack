@@ -12,21 +12,21 @@ RUN \
         mariadb-client=10.5.13-r0 \
         nginx=1.20.2-r0 \
         php7-curl=7.4.26-r0 \
-        php7-dom=7.4.26-r0 \
-        php7-fileinfo=7.4.26-r0 \
-        php7-fpm=7.4.26-r0 \
-        php7-gd=7.4.26-r0 \
-        php7-json=7.4.26-r0 \
-        php7-ldap=7.4.26-r0 \
-        php7-mbstring=7.4.26-r0 \
-        php7-mysqlnd=7.4.26-r0 \
-        php7-openssl=7.4.26-r0 \
-        php7-pdo_mysql=7.4.26-r0 \
-        php7-session=7.4.26-r0 \
-        php7-simplexml=7.4.26-r0 \
-        php7-tokenizer=7.4.26-r0 \
-        php7-xml=7.4.26-r0 \
-        php7=7.4.26-r0 \
+        php8-curl=8.0.18-r0 \
+        php8-dom=8.0.18-r0 \
+        php8-fileinfo=8.0.18-r0 \
+        php8-fpm=8.0.18-r0 \
+        php8-gd=8.0.18-r0 \
+        php8-ldap=8.0.18-r0 \
+        php8-mbstring=8.0.18-r0 \
+        php8-mysqlnd=8.0.18-r0 \
+        php8-openssl=8.0.18-r0 \
+        php8-pdo_mysql=8.0.18-r0 \
+        php8-session=8.0.18-r0 \
+        php8-simplexml=8.0.18-r0 \
+        php8-tokenizer=8.0.18-r0 \
+        php8-xml=8.0.18-r0 \
+        php8=8.0.18-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         composer=2.1.9-r0 \
