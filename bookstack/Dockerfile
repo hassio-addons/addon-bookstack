@@ -25,6 +25,7 @@ RUN \
         php8-simplexml=8.0.18-r0 \
         php8-tokenizer=8.0.18-r0 \
         php8-xml=8.0.18-r0 \
+        php8-xmlwriter=8.0.18-r0 \
         php8=8.0.18-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
