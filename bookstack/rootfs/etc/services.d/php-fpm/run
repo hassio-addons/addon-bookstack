@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: Bookstack
 # Runs the PHP-FPM daemon
@@ -50,4 +50,4 @@ php8 /var/www/bookstack/artisan migrate --force
 
 bashio::log.info "Starting PHP-FPM..."
 
-exec php-fpm8 --nodaemonize
+exec php-fpm8 -R --nodaemonize
