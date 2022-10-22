@@ -9,30 +9,30 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.6.8-r0 \
-        nginx=1.22.0-r1 \
-        php8-curl=8.0.21-r0 \
-        php8-dom=8.0.21-r0 \
-        php8-fileinfo=8.0.21-r0 \
-        php8-fpm=8.0.21-r0 \
-        php8-gd=8.0.21-r0 \
-        php8-ldap=8.0.21-r0 \
-        php8-mbstring=8.0.21-r0 \
-        php8-mysqlnd=8.0.21-r0 \
-        php8-openssl=8.0.21-r0 \
-        php8-pdo_mysql=8.0.21-r0 \
-        php8-session=8.0.21-r0 \
-        php8-simplexml=8.0.21-r0 \
-        php8-tokenizer=8.0.21-r0 \
-        php8-xml=8.0.21-r0 \
-        php8-xmlwriter=8.0.21-r0 \
-        php8=8.0.21-r0 \
+        mariadb-client=10.6.10-r0 \
+        nginx=1.22.1-r0 \
+        php8-curl=8.0.24-r0 \
+        php8-dom=8.0.24-r0 \
+        php8-fileinfo=8.0.24-r0 \
+        php8-fpm=8.0.24-r0 \
+        php8-gd=8.0.24-r0 \
+        php8-ldap=8.0.24-r0 \
+        php8-mbstring=8.0.24-r0 \
+        php8-mysqlnd=8.0.24-r0 \
+        php8-openssl=8.0.24-r0 \
+        php8-pdo_mysql=8.0.24-r0 \
+        php8-session=8.0.24-r0 \
+        php8-simplexml=8.0.24-r0 \
+        php8-tokenizer=8.0.24-r0 \
+        php8-xml=8.0.24-r0 \
+        php8-xmlwriter=8.0.24-r0 \
+        php8=8.0.24-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-       composer=2.3.10-r0 \
+       composer=2.4.2-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
-        https://github.com/BookStackApp/BookStack/archive/v22.07.1.tar.gz \
+        https://github.com/BookStackApp/BookStack/archive/v22.10.1.tar.gz \
     && mkdir -p /var/www/bookstack \
     && tar zxf /tmp/bookstack.tar.gz -C \
         /var/www/bookstack --strip-components=1 \
