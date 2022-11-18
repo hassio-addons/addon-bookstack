@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.7
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -11,22 +11,22 @@ RUN \
     apk add --no-cache \
         mariadb-client=10.6.10-r0 \
         nginx=1.22.1-r0 \
-        php8-curl=8.0.24-r0 \
-        php8-dom=8.0.24-r0 \
-        php8-fileinfo=8.0.24-r0 \
-        php8-fpm=8.0.24-r0 \
-        php8-gd=8.0.24-r0 \
-        php8-ldap=8.0.24-r0 \
-        php8-mbstring=8.0.24-r0 \
-        php8-mysqlnd=8.0.24-r0 \
-        php8-openssl=8.0.24-r0 \
-        php8-pdo_mysql=8.0.24-r0 \
-        php8-session=8.0.24-r0 \
-        php8-simplexml=8.0.24-r0 \
-        php8-tokenizer=8.0.24-r0 \
-        php8-xml=8.0.24-r0 \
-        php8-xmlwriter=8.0.24-r0 \
-        php8=8.0.24-r0 \
+        php8-curl=8.0.25-r0\
+        php8-dom=8.0.25-r0\
+        php8-fileinfo=8.0.25-r0\
+        php8-fpm=8.0.25-r0\
+        php8-gd=8.0.25-r0\
+        php8-ldap=8.0.25-r0\
+        php8-mbstring=8.0.25-r0\
+        php8-mysqlnd=8.0.25-r0\
+        php8-openssl=8.0.25-r0\
+        php8-pdo_mysql=8.0.25-r0\
+        php8-session=8.0.25-r0\
+        php8-simplexml=8.0.25-r0\
+        php8-tokenizer=8.0.25-r0\
+        php8-xml=8.0.25-r0\
+        php8-xmlwriter=8.0.25-r0\
+        php8=8.0.25-r0\
     \
     && apk add --no-cache --virtual .build-dependencies \
        composer=2.4.2-r0 \
