@@ -29,7 +29,7 @@ RUN \
         php81=8.1.15-r0\
     \
     && apk add --no-cache --virtual .build-dependencies \
-       composer=2.4.2-r0 \
+       composer=2.4.4-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         https://github.com/BookStackApp/BookStack/archive/v22.10.2.tar.gz \
