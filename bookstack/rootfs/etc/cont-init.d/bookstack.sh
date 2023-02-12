@@ -81,7 +81,7 @@ ln -s /data/bookstack/uploads /var/www/bookstack/public/uploads
 # Create API key if needed
 if ! bashio::fs.file_exists "/data/bookstack/appkey.txt"; then
   bashio::log.info "Generating app key"
-  key=$(php8 /var/www/bookstack/artisan key:generate --show)
+  key=$(php81 /var/www/bookstack/artisan key:generate --show)
   echo "${key}" > /data/bookstack/appkey.txt
   bashio::log.info "App Key generated: ${key}"
 fi
