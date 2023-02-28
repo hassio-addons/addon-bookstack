@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:13.1.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:13.1.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -11,22 +11,22 @@ RUN \
     apk add --no-cache \
         mariadb-client=10.6.12-r0 \
         nginx=1.22.1-r0 \
-        php81-curl=8.1.15-r0\
-        php81-dom=8.1.15-r0\
-        php81-fileinfo=8.1.15-r0\
-        php81-fpm=8.1.15-r0\
-        php81-gd=8.1.15-r0\
-        php81-ldap=8.1.15-r0\
-        php81-mbstring=8.1.15-r0\
-        php81-mysqlnd=8.1.15-r0\
-        php81-openssl=8.1.15-r0\
-        php81-pdo_mysql=8.1.15-r0\
-        php81-session=8.1.15-r0\
-        php81-simplexml=8.1.15-r0\
-        php81-tokenizer=8.1.15-r0\
-        php81-xml=8.1.15-r0\
-        php81-xmlwriter=8.1.15-r0\
-        php81=8.1.15-r0\
+        php81-curl=8.1.16-r0\
+        php81-dom=8.1.16-r0\
+        php81-fileinfo=8.1.16-r0\
+        php81-fpm=8.1.16-r0\
+        php81-gd=8.1.16-r0\
+        php81-ldap=8.1.16-r0\
+        php81-mbstring=8.1.16-r0\
+        php81-mysqlnd=8.1.16-r0\
+        php81-openssl=8.1.16-r0\
+        php81-pdo_mysql=8.1.16-r0\
+        php81-session=8.1.16-r0\
+        php81-simplexml=8.1.16-r0\
+        php81-tokenizer=8.1.16-r0\
+        php81-xml=8.1.16-r0\
+        php81-xmlwriter=8.1.16-r0\
+        php81=8.1.16-r0\
     \
     && apk add --no-cache --virtual .build-dependencies \
        composer=2.4.4-r0 \
