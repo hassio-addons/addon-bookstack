@@ -31,6 +31,7 @@
         "ARG BOOKSTACK_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
       "datasourceTemplate": "github-releases",
+      "versioningTemplate": "loose",
       "depNameTemplate": "BookStackApp/BookStack"
     }
   ],
@@ -52,12 +53,6 @@
     {
       "groupName": "Add-on base image",
       "matchDatasources": ["docker"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
-    },
-    {
-      "matchDatasources": ["github-releases"],
-      "matchDepNames": ["BookStackApp/BookStack"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
