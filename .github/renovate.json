@@ -23,7 +23,7 @@
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
-      "depNameTemplate": "alpine_3_81/{{package}}"
+      "depNameTemplate": "alpine_3_18/{{package}}"
     },
     {
       "fileMatch": ["/Dockerfile$"],
