@@ -12,22 +12,22 @@ RUN \
     apk add --no-cache \
         mariadb-client=10.11.4-r0 \
         nginx=1.24.0-r6 \
-        php81-curl=8.1.20-r0 \
-        php81-dom=8.1.20-r0 \
-        php81-fileinfo=8.1.20-r0 \
-        php81-fpm=8.1.20-r0 \
-        php81-gd=8.1.20-r0 \
-        php81-ldap=8.1.20-r0 \
-        php81-mbstring=8.1.20-r0 \
-        php81-mysqlnd=8.1.20-r0 \
-        php81-openssl=8.1.20-r0 \
-        php81-pdo_mysql=8.1.20-r0 \
-        php81-session=8.1.20-r0 \
-        php81-simplexml=8.1.20-r0 \
-        php81-tokenizer=8.1.20-r0 \
-        php81-xml=8.1.20-r0 \
-        php81-xmlwriter=8.1.20-r0 \
-        php81=8.1.20-r0 \
+        php81-curl=8.1.21-r0 \
+        php81-dom=8.1.21-r0 \
+        php81-fileinfo=8.1.21-r0 \
+        php81-fpm=8.1.21-r0 \
+        php81-gd=8.1.21-r0 \
+        php81-ldap=8.1.21-r0 \
+        php81-mbstring=8.1.21-r0 \
+        php81-mysqlnd=8.1.21-r0 \
+        php81-openssl=8.1.21-r0 \
+        php81-pdo_mysql=8.1.21-r0 \
+        php81-session=8.1.21-r0 \
+        php81-simplexml=8.1.21-r0 \
+        php81-tokenizer=8.1.21-r0 \
+        php81-xml=8.1.21-r0 \
+        php81-xmlwriter=8.1.21-r0 \
+        php81=8.1.21-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
        composer=2.5.8-r0 \
