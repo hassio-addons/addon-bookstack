@@ -17,6 +17,7 @@ RUN \
         php81-fileinfo=8.1.21-r0 \
         php81-fpm=8.1.21-r0 \
         php81-gd=8.1.21-r0 \
+        php81-iconv=8.1.21-r0 \
         php81-ldap=8.1.21-r0 \
         php81-mbstring=8.1.21-r0 \
         php81-mysqlnd=8.1.21-r0 \
