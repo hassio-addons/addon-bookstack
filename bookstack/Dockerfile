@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG BOOKSTACK_VERSION="v23.12.2"
+ARG BOOKSTACK_VERSION="v24.02"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
