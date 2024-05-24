@@ -46,7 +46,7 @@ if bashio::config.equals 'log_level' 'debug' \
 fi
 
 bashio::log.info "Installing/updating Database"
-php82 /var/www/bookstack/artisan migrate --force
+php83 /var/www/bookstack/artisan migrate --force
 
 bashio::log.info "Starting PHP-FPM..."
 
