@@ -10,25 +10,25 @@ ARG BOOKSTACK_VERSION="v24.05.1"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.11.6-r0 \
-        nginx=1.24.0-r16 \
-        php82-curl=8.2.19-r0 \
-        php82-dom=8.2.19-r0 \
-        php82-fileinfo=8.2.19-r0 \
-        php82-fpm=8.2.19-r0 \
-        php82-gd=8.2.19-r0 \
-        php82-iconv=8.2.19-r0 \
-        php82-ldap=8.2.19-r0 \
-        php82-mbstring=8.2.19-r0 \
-        php82-mysqlnd=8.2.19-r0 \
-        php82-openssl=8.2.19-r0 \
-        php82-pdo_mysql=8.2.19-r0 \
-        php82-session=8.2.19-r0 \
-        php82-simplexml=8.2.19-r0 \
-        php82-tokenizer=8.2.19-r0 \
-        php82-xml=8.2.19-r0 \
-        php82-xmlwriter=8.2.19-r0 \
-        php82=8.2.19-r0 \
+        mariadb-client=10.11.8-r0 \
+        nginx=1.26.0-r1 \
+        php83-curl=8.3.7-r0 \
+        php83-dom=8.3.7-r0 \
+        php83-fileinfo=8.3.7-r0 \
+        php83-fpm=8.3.7-r0 \
+        php83-gd=8.3.7-r0 \
+        php83-iconv=8.3.7-r0 \
+        php83-ldap=8.3.7-r0 \
+        php83-mbstring=8.3.7-r0 \
+        php83-mysqlnd=8.3.7-r0 \
+        php83-openssl=8.3.7-r0 \
+        php83-pdo_mysql=8.3.7-r0 \
+        php83-session=8.3.7-r0 \
+        php83-simplexml=8.3.7-r0 \
+        php83-tokenizer=8.3.7-r0 \
+        php83-xml=8.3.7-r0 \
+        php83-xmlwriter=8.3.7-r0 \
+        php83=8.3.7-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
        composer=2.7.6-r0 \
