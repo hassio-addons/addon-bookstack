@@ -130,6 +130,7 @@ that there is no easy upgrade path between the two options.
 ## Known issues and limitations
 
 - Ingress will not function due to the way the application stores image files.
+- Uploading large images may result in PHP out of memory errors. This arises when PHP attempts to rescale the images and encounters an out of memory issue.
 
 ## Changelog & Releases
 
