@@ -50,4 +50,4 @@ php83 /var/www/bookstack/artisan migrate --force
 
 bashio::log.info "Starting PHP-FPM..."
 
-exec php-fpm82 -R --nodaemonize
+exec php-fpm83 -R --nodaemonize
