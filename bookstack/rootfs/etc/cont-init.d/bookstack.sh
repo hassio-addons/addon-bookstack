@@ -47,9 +47,10 @@ else
   bashio::log.warning "Uninstalling the MariaDB addon will remove any data"
 
   bashio::log.info "Creating database for Bookstack if required"
-  mysql \
+  mariadb \
     -u "${username}" -p"${password}" \
     -h "${host}" -P "${port}" \
+    --skip-ssl \
     -e "CREATE DATABASE IF NOT EXISTS \`bookstack\` ;"
 fi
 
