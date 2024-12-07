@@ -10,8 +10,8 @@ ARG BOOKSTACK_VERSION="v24.10.3"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=10.11.10-r0 \
-        nginx=1.26.2-r0 \
+        mariadb-client=11.4.4-r1 \
+        nginx=1.26.2-r3 \
         php83-curl=8.3.14-r0 \
         php83-dom=8.3.14-r0 \
         php83-fileinfo=8.3.14-r0 \
@@ -31,7 +31,7 @@ RUN \
         php83=8.3.14-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-       composer=2.8.2-r0 \
+       composer=2.8.3-r1 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         "https://github.com/BookStackApp/BookStack/archive/${BOOKSTACK_VERSION}.tar.gz" \
