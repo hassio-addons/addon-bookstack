@@ -31,7 +31,7 @@ RUN \
         php83=8.3.14-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-       composer=2.8.3-r1 \
+       composer=2.8.4-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         "https://github.com/BookStackApp/BookStack/archive/${BOOKSTACK_VERSION}.tar.gz" \
