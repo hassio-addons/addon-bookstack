@@ -28,6 +28,7 @@ RUN \
         php83-tokenizer=8.3.15-r0 \
         php83-xml=8.3.15-r0 \
         php83-xmlwriter=8.3.15-r0 \
+        php83-zip=8.3.15-r0 \
         php83=8.3.15-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
