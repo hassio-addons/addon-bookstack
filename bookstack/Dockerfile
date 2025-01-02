@@ -11,7 +11,7 @@ ARG BOOKSTACK_VERSION="v24.12"
 RUN \
     apk add --no-cache \
         mariadb-client=11.4.4-r1 \
-        nginx=1.26.2-r3 \
+        nginx=1.26.2-r4 \
         php83-curl=8.3.15-r0 \
         php83-dom=8.3.15-r0 \
         php83-fileinfo=8.3.15-r0 \
