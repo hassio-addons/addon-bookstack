@@ -10,7 +10,7 @@ ARG BOOKSTACK_VERSION="v24.12.1"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=11.4.4-r1 \
+        mariadb-client=11.4.5-r0 \
         nginx=1.26.2-r4 \
         php83-curl=8.3.17-r0 \
         php83-dom=8.3.17-r0 \
