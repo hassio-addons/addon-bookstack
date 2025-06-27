@@ -10,29 +10,29 @@ ARG BOOKSTACK_VERSION="v25.05.1"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=11.4.5-r0 \
-        nginx=1.26.3-r0 \
-        php83-curl=8.3.19-r0 \
-        php83-dom=8.3.19-r0 \
-        php83-fileinfo=8.3.19-r0 \
-        php83-fpm=8.3.19-r0 \
-        php83-gd=8.3.19-r0 \
-        php83-iconv=8.3.19-r0 \
-        php83-ldap=8.3.19-r0 \
-        php83-mbstring=8.3.19-r0 \
-        php83-mysqlnd=8.3.19-r0 \
-        php83-openssl=8.3.19-r0 \
-        php83-pdo_mysql=8.3.19-r0 \
-        php83-session=8.3.19-r0 \
-        php83-simplexml=8.3.19-r0 \
-        php83-tokenizer=8.3.19-r0 \
-        php83-xml=8.3.19-r0 \
-        php83-xmlwriter=8.3.19-r0 \
-        php83-zip=8.3.19-r0 \
-        php83=8.3.19-r0 \
+        mariadb-client=11.4.5-r2 \
+        nginx=1.28.0-r3 \
+        php83-curl=8.3.22-r0 \
+        php83-dom=8.3.22-r0 \
+        php83-fileinfo=8.3.22-r0 \
+        php83-fpm=8.3.22-r0 \
+        php83-gd=8.3.22-r0 \
+        php83-iconv=8.3.22-r0 \
+        php83-ldap=8.3.22-r0 \
+        php83-mbstring=8.3.22-r0 \
+        php83-mysqlnd=8.3.22-r0 \
+        php83-openssl=8.3.22-r0 \
+        php83-pdo_mysql=8.3.22-r0 \
+        php83-session=8.3.22-r0 \
+        php83-simplexml=8.3.22-r0 \
+        php83-tokenizer=8.3.22-r0 \
+        php83-xml=8.3.22-r0 \
+        php83-xmlwriter=8.3.22-r0 \
+        php83-zip=8.3.22-r0 \
+        php83=8.3.22-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-       composer=2.8.9-r0 \
+       composer=2.8.9-r1 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         "https://github.com/BookStackApp/BookStack/archive/${BOOKSTACK_VERSION}.tar.gz" \
