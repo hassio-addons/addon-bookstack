@@ -4,7 +4,6 @@ version: dev
 slug: bookstack
 description: Simple & Free Wiki Software
 url: https://github.com/hassio-addons/addon-bookstack
-codenotary: codenotary@frenck.dev
 webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 init: false
 arch:
