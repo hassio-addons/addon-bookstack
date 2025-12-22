@@ -12,24 +12,24 @@ RUN \
     apk add --no-cache \
         mariadb-client=11.4.8-r0 \
         nginx=1.28.0-r3 \
-        php83-curl=8.3.27-r0 \
-        php83-dom=8.3.27-r0 \
-        php83-fileinfo=8.3.27-r0 \
-        php83-fpm=8.3.27-r0 \
-        php83-gd=8.3.27-r0 \
-        php83-iconv=8.3.27-r0 \
-        php83-ldap=8.3.27-r0 \
-        php83-mbstring=8.3.27-r0 \
-        php83-mysqlnd=8.3.27-r0 \
-        php83-openssl=8.3.27-r0 \
-        php83-pdo_mysql=8.3.27-r0 \
-        php83-session=8.3.27-r0 \
-        php83-simplexml=8.3.27-r0 \
-        php83-tokenizer=8.3.27-r0 \
-        php83-xml=8.3.27-r0 \
-        php83-xmlwriter=8.3.27-r0 \
-        php83-zip=8.3.27-r0 \
-        php83=8.3.27-r0 \
+        php83-curl=8.3.29-r0 \
+        php83-dom=8.3.29-r0 \
+        php83-fileinfo=8.3.29-r0 \
+        php83-fpm=8.3.29-r0 \
+        php83-gd=8.3.29-r0 \
+        php83-iconv=8.3.29-r0 \
+        php83-ldap=8.3.29-r0 \
+        php83-mbstring=8.3.29-r0 \
+        php83-mysqlnd=8.3.29-r0 \
+        php83-openssl=8.3.29-r0 \
+        php83-pdo_mysql=8.3.29-r0 \
+        php83-session=8.3.29-r0 \
+        php83-simplexml=8.3.29-r0 \
+        php83-tokenizer=8.3.29-r0 \
+        php83-xml=8.3.29-r0 \
+        php83-xmlwriter=8.3.29-r0 \
+        php83-zip=8.3.29-r0 \
+        php83=8.3.29-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
        composer=2.8.10-r0 \
