@@ -1,6 +1,6 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Bookstack
+# Home Assistant Community App: Bookstack
 # This file validates config, creates the database and configures the app key
 # ==============================================================================
 declare host
@@ -32,7 +32,7 @@ if bashio::config.has_value 'remote_mysql_host'; then
 else
   if ! bashio::services.available 'mysql'; then
      bashio::log.fatal \
-       "Local database access should be provided by the MariaDB addon"
+       "Local database access should be provided by the MariaDB app"
      bashio::exit.nok \
        "Please ensure it is installed and started"
   fi
@@ -42,9 +42,9 @@ else
   port=$(bashio::services "mysql" "port")
   username=$(bashio::services "mysql" "username")
 
-  bashio::log.warning "Bookstack is using the Maria DB addon"
+  bashio::log.warning "Bookstack is using the Maria DB app"
   bashio::log.warning "Please ensure this is included in your backups"
-  bashio::log.warning "Uninstalling the MariaDB addon will remove any data"
+  bashio::log.warning "Uninstalling the MariaDB app will remove any data"
 
   bashio::log.info "Creating database for Bookstack if required"
   mariadb \
