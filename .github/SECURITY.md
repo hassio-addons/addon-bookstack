@@ -7,7 +7,7 @@ your contributions.
 ## Supported Versions
 
 Security updates are provided only for the latest released version of this
-add-on. Users are strongly encouraged to keep their installations up to date.
+app. Users are strongly encouraged to keep their installations up to date.
 
 | Version        | Supported          |
 | -------------- | ------------------ |
@@ -22,7 +22,7 @@ discussions, or pull requests.**
 Instead, report them privately through GitHub's private vulnerability
 reporting:
 
-[**Report a vulnerability**](https://github.com/hassio-addons/addon-bookstack/security/advisories/new)
+[**Report a vulnerability**](https://github.com/hassio-addons/app-bookstack/security/advisories/new)
 
 If for any reason you are unable to use GitHub's private vulnerability
 reporting, you may also reach out to the maintainer by email at
@@ -32,7 +32,7 @@ When reporting, please include as much of the following as possible:
 
 - A clear description of the vulnerability and its potential impact.
 - Steps to reproduce, or a proof of concept.
-- The affected version(s) of the add-on.
+- The affected version(s) of the app.
 - Any known mitigations or workarounds.
 
 ## Disclosure Timeline
@@ -59,11 +59,11 @@ The following are **not** considered security vulnerabilities in this project:
   [BookStack project](https://github.com/BookStackApp/BookStack/security/policy).
 - Issues in Home Assistant, the Supervisor, or the base image; please report
   those to the [Home Assistant project](https://github.com/home-assistant/core/security/policy).
-- Exposure of the add-on to untrusted networks. This add-on is intended to be
+- Exposure of the app to untrusted networks. This app is intended to be
   reached through Home Assistant's ingress or a trusted local network, and the
   configured database is assumed to be trusted.
 
 ## Scope
 
-This security policy covers the Bookstack add-on published from this
+This security policy covers the Bookstack app published from this
 repository, including its container image and configuration.

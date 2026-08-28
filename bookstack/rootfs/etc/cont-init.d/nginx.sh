@@ -1,6 +1,6 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Bookstack
+# Home Assistant Community App: Bookstack
 # This file configures nginx
 # ==============================================================================
 
