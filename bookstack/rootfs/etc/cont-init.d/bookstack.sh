@@ -91,5 +91,5 @@ if bashio::config.has_value "appkey"; then
    bashio::log.info "Setting appkey to user defined value"
    key=$(bashio::config "appkey")
    echo "${key}" > /data/bookstack/appkey.txt
-   bashio::addon.option 'appkey'
+   bashio::app.option 'appkey'
 fi
