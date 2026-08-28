@@ -12,6 +12,20 @@ export DB_PORT
 export DB_USERNAME
 export LOG_CHANNEL=stderr
 
+# BookStack switches its session cookie to SameSite=None as soon as
+# ALLOWED_IFRAME_HOSTS is set, which is what embedding in a Home Assistant
+# dashboard requires. Browsers reject a SameSite=None cookie that is not also
+# marked Secure, leaving BookStack without a session, so logins bounce back to
+# the login page or fail with a 419. BookStack only infers Secure from APP_URL,
+# which this app does not set, so mark it explicitly when serving TLS.
+#
+# Only set when SSL is on. Leaving it unset otherwise keeps BookStack's own
+# APP_URL fallback working for anyone terminating TLS on a reverse proxy, and
+# setting it before the loop below means a user provided envvar still wins.
+if bashio::config.true 'ssl'; then
+    export SESSION_SECURE_COOKIE="true"
+fi
+
 for envvar in $(bashio::config 'envvars|keys'); do
     name=$(bashio::config "envvars[${envvar}].name")
     value=$(bashio::config "envvars[${envvar}].value")
