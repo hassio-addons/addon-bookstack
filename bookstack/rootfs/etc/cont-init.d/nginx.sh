@@ -4,7 +4,7 @@
 # This file configures nginx
 # ==============================================================================
 
-if bashio::var.is_empty "$(bashio::addon.port 80)"; then
+if bashio::var.is_empty "$(bashio::app.port 80)"; then
     bashio::log.warning "No host port is configured, please ensure a port is"
     bashio::log.warning "set for external access to function"
 fi
