@@ -68,7 +68,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2019-2025 Paul Sinclair
+Copyright (c) 2019-2026 Paul Sinclair
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -106,7 +106,7 @@ SOFTWARE.
 [github-actions]: https://github.com/hassio-addons/addon-bookstack/actions
 [issue]: https://github.com/hassio-addons/addon-bookstack/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-bookstack.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-bookstack.svg
