@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:19.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:21.0.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -10,29 +10,29 @@ ARG BOOKSTACK_VERSION="v25.12.2"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache \
-        mariadb-client=11.4.8-r0 \
-        nginx=1.28.0-r3 \
-        php83-curl=8.3.29-r0 \
-        php83-dom=8.3.29-r0 \
-        php83-fileinfo=8.3.29-r0 \
-        php83-fpm=8.3.29-r0 \
-        php83-gd=8.3.29-r0 \
-        php83-iconv=8.3.29-r0 \
-        php83-ldap=8.3.29-r0 \
-        php83-mbstring=8.3.29-r0 \
-        php83-mysqlnd=8.3.29-r0 \
-        php83-openssl=8.3.29-r0 \
-        php83-pdo_mysql=8.3.29-r0 \
-        php83-session=8.3.29-r0 \
-        php83-simplexml=8.3.29-r0 \
-        php83-tokenizer=8.3.29-r0 \
-        php83-xml=8.3.29-r0 \
-        php83-xmlwriter=8.3.29-r0 \
-        php83-zip=8.3.29-r0 \
-        php83=8.3.29-r0 \
+        mariadb-client=11.8.8-r0 \
+        nginx=1.30.4-r1 \
+        php85-curl=8.5.9-r0 \
+        php85-dom=8.5.9-r0 \
+        php85-fileinfo=8.5.9-r0 \
+        php85-fpm=8.5.9-r0 \
+        php85-gd=8.5.9-r0 \
+        php85-iconv=8.5.9-r0 \
+        php85-ldap=8.5.9-r0 \
+        php85-mbstring=8.5.9-r0 \
+        php85-mysqlnd=8.5.9-r0 \
+        php85-openssl=8.5.9-r0 \
+        php85-pdo_mysql=8.5.9-r0 \
+        php85-session=8.5.9-r0 \
+        php85-simplexml=8.5.9-r0 \
+        php85-tokenizer=8.5.9-r0 \
+        php85-xml=8.5.9-r0 \
+        php85-xmlwriter=8.5.9-r0 \
+        php85-zip=8.5.9-r0 \
+        php85=8.5.9-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-       composer=2.8.10-r0 \
+       composer=2.10.2-r0 \
     \
     && curl -J -L -o /tmp/bookstack.tar.gz \
         "https://github.com/BookStackApp/BookStack/archive/${BOOKSTACK_VERSION}.tar.gz" \
