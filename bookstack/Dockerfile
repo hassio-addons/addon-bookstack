@@ -12,24 +12,24 @@ RUN \
     apk add --no-cache \
         mariadb-client=11.8.8-r0 \
         nginx=1.30.4-r1 \
-        php85-curl=8.5.9-r0 \
-        php85-dom=8.5.9-r0 \
-        php85-fileinfo=8.5.9-r0 \
-        php85-fpm=8.5.9-r0 \
-        php85-gd=8.5.9-r0 \
-        php85-iconv=8.5.9-r0 \
-        php85-ldap=8.5.9-r0 \
-        php85-mbstring=8.5.9-r0 \
-        php85-mysqlnd=8.5.9-r0 \
-        php85-openssl=8.5.9-r0 \
-        php85-pdo_mysql=8.5.9-r0 \
-        php85-session=8.5.9-r0 \
-        php85-simplexml=8.5.9-r0 \
-        php85-tokenizer=8.5.9-r0 \
-        php85-xml=8.5.9-r0 \
-        php85-xmlwriter=8.5.9-r0 \
-        php85-zip=8.5.9-r0 \
-        php85=8.5.9-r0 \
+        php85-curl=8.5.10-r0 \
+        php85-dom=8.5.10-r0 \
+        php85-fileinfo=8.5.10-r0 \
+        php85-fpm=8.5.10-r0 \
+        php85-gd=8.5.10-r0 \
+        php85-iconv=8.5.10-r0 \
+        php85-ldap=8.5.10-r0 \
+        php85-mbstring=8.5.10-r0 \
+        php85-mysqlnd=8.5.10-r0 \
+        php85-openssl=8.5.10-r0 \
+        php85-pdo_mysql=8.5.10-r0 \
+        php85-session=8.5.10-r0 \
+        php85-simplexml=8.5.10-r0 \
+        php85-tokenizer=8.5.10-r0 \
+        php85-xml=8.5.10-r0 \
+        php85-xmlwriter=8.5.10-r0 \
+        php85-zip=8.5.10-r0 \
+        php85=8.5.10-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
        composer=2.10.2-r0 \
